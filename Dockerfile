@@ -17,7 +17,7 @@ COPY settings.gradle settings.gradle
 RUN chmod +x gradlew
 
 # Build the application
-RUN ./gradlew build
+
 
 # Run tests
 CMD ["./gradlew", "test"]
