@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Kumarazdevops/project-01_08-07-2024.git', branch: 'feature/update'
+                git branch : 'feature/updates', url: 'https://github.com/Kumarazdevops/project-01_08-07-2024' 
             }
         }
 
