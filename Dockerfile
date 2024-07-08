@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN 
+RUN ./gradlew build
 
 CMD ["./gradlew", "test"]
