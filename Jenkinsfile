@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'desktop-app:latest'
+        DOCKER_IMAGE = 'my_image:latest'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch : 'feature/updates', url: 'https://github.com/Kumarazdevops/project-01_08-07-2024' 
+                git branch : 'feature/updates', url: 'https://github.com/Kumarazdevops/project-01_08-07-2024.git' 
             }
         }
 
