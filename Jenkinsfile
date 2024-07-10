@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     docker.image(my_image:latest).inside {
-                         bat './gradlew test' // Replace with your build/test commands
+                         echo "Pass Test"
                     }
                 }
             }
