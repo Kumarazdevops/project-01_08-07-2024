@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
+RUN javac Main.java
 
-
-CMD ["./gradlew", "test", "my_image"]
+CMD ["Main", "test", "my_image"]
