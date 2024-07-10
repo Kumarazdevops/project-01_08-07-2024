@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN javac Main.java
 
 CMD ["Main", "test", "my_image"]
+EXPOSE 80
+
