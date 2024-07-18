@@ -23,9 +23,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 script {
-                    docker.image(my_image:latest).inside {
-                         echo "Pass Test"
-                    }
+                    bat 'docker volume create vol1'
                 }
             }
         }
