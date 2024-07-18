@@ -9,6 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch : 'feature/updates', url: 'https://github.com/Kumarazdevops/project-01_08-07-2024.git' 
+                bat 'docker login -u sravankumar0338 -p Kumar@1997'
             }
         }
 
